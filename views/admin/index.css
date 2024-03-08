@@ -1,0 +1,140 @@
+html,
+body {
+    height: 100%;
+}
+
+.mainPage {
+    background-color: #e5e5e5;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.overview {
+    width: 100%;
+    height: 200px;
+    background-image: -webkit-linear-gradient(90deg, #45b649 0%, #dce35b 100%)
+}
+
+.nav-item:hover {
+    background-color: #e4e4e4;
+}
+
+.sidebar {
+    box-shadow: 0 0 15px #d7d7d7;
+}
+
+.hidden {
+    display: none
+}
+
+.show {
+    display: block !important;
+}
+
+.table{
+    margin-bottom: unset !important;
+}
+
+.table-responsive {
+    background-color: #fff;
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    width: 70%;
+}
+
+.group button{
+    width: 20%;
+    position: relative;
+}
+
+.group button::before{
+    position: absolute;
+    top: 0;
+    left: -.5rem;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #000;
+}
+
+.inputSearch {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+
+.inputSearch::placeholder {
+    color: #9e9ea7;
+}
+
+.inputSearch:focus,
+.inputSearch:hover {
+    outline: none;
+    border-color: #45b649;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #e7ffe8cf;
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+
+#tableBody{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.btn-more{
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-more:hover{
+    background-color: #00CC21;
+    color: #fff;
+}
+
+#tableBody:not(#tableBody tr:last-child) tr:hover{
+    background-color: #ccc;
+}
+
+.modal-body p{
+    margin: unset;
+}
+
+.select-genres{
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+/* .toast{
+    position: absolute;
+    bottom: 20px;
+} */
+
+.poster{
+    position: relative;
+    height: 300px !important;
+    background-color: #000;
+}
+
+.poster img{
+    height: 100%;
+}

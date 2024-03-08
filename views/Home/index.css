@@ -1,0 +1,347 @@
+body {
+    background-color: #141414;
+    font-family: Arial, sans-serif;
+    /* color: #fff; */
+}
+
+.containerLoader{
+    background-color: #141414;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1031;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00CC21 !important;
+}
+
+.spinner-grow{
+    width: 3rem;
+    height: 3rem;
+}
+
+.slideMain {
+    background-size: 100%;
+    background-position: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slideBackdrop {
+    filter: brightness(30%);
+}
+
+.carousel-item,
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10% !important;
+}
+
+.carousel-caption {
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Hide right scrollbar for Chrome, Safari and Opera */
+.listFilm::-webkit-scrollbar, .listGenre::-webkit-scrollbar {
+    width: 0;
+    height: 8px;
+}
+
+/* Show bottom scrollbar */
+.listFilm::-webkit-scrollbar-corner, .listGenre::-webkit-scrollbar-corner {
+    background-color: #F5F5F5;
+    height: 8px;
+}
+
+.listFilm::-webkit-scrollbar-thumb, .listGenre::-webkit-scrollbar-thumb {
+    background-color: #959595;
+    height: 8px;
+    border-radius: 3px;
+}
+
+.listFilm:hover::-webkit-scrollbar, .listGenre::-webkit-scrollbar {
+    display: block;
+    height: 8px;
+    visibility: visible;
+}
+
+.listFilm:hover::-webkit-scrollbar-thumb:hover, .listGenre::-webkit-scrollbar-thumb:hover {
+    height: 8px;
+    background-color: #d1d1d1;
+}
+
+.carousel.listFilm {
+    padding: 20px 15px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.carousel.listFilm:hover{
+    overflow: scroll;
+}
+
+.overview {
+    text-align: justify;
+}
+
+.filmName {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.genre-block {
+    width: 90px;
+    height: 30px;
+    background-color: #DF497F;
+    font-size: 13px;
+    font-weight: 700;
+    color: #000000;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#movie_player {
+    display: none;
+}
+
+.btn-watch,
+.btn-inf {
+    color: #fff;
+    width: 150px;
+    height: 50px;
+}
+
+.btn-watch {
+    background-color: #00CC21;
+    /* border: solid 2px #bdffc8b3; */
+}
+
+.btn-watch:hover {
+    color: #fff;
+    box-shadow: 0 0 10px #39ff14;
+}
+
+.markFilm h5 {
+    margin: unset;
+}
+
+.labelMark,
+.labelMark_user {
+    font-weight: 600;
+    padding: 0 5px;
+    background-color: #ffcc15
+}
+
+.labelMark {
+    color: #000000;
+    background-color: #ffcc15
+}
+
+.labelMark_user {
+    color: #fff;
+    background-color: #00CC21
+}
+
+.btn-inf {
+    color: #fff;
+    background-color: none;
+    border: solid 2px #fff;
+}
+
+.btn-inf:hover {
+    background-color: #fff;
+    color: #00CC21;
+}
+
+.trailerBtn {
+    background-color: #00CC21;
+    color: #fff;
+}
+
+.overlay {
+    transition: 1s;
+}
+
+#trailerVideo {
+    display: block;
+}
+
+.watchThumbnail:hover {
+    cursor: pointer;
+}
+
+.card{
+
+}
+
+.card-body {
+    font-size: 12px;
+}
+
+.favouriteTotal i {
+    line-height: unset;
+}
+
+.favouriteTotal b {
+    color: #00CC21;
+}
+
+.watchLink {}
+
+.watchLink h3 {
+    font-size: 15px;
+    padding: unset;
+    white-space: normal !important;
+    width: 40% !important;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.watchLink:hover .watchThumbnail {
+    filter: blur(1px) brightness(70%);
+    -webkit-filter: blur(1px) brightness(70%);
+}
+
+.watchLink:hover h3 {
+    opacity: 1;
+}
+
+.linkToDetail {
+    height: 4rem;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF !important;
+}
+
+.linkToDetail:hover {
+    cursor: pointer;
+    color: #00CC21 !important;
+}
+
+.listFilmSort {
+    position: relative;
+    background: linear-gradient(180deg, rgba(46, 46, 46, 0.73) -5.42%, rgba(4, 4, 4, 0.1) 44.58%, rgba(59, 59, 59, 0.54) 94.58%);
+}
+
+.filmSort{
+    transition: 0.5s;
+}
+
+.titleGenre .badge {
+    font-size: 13px;
+}
+
+.nameGenre {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+.listGenre {
+    overflow: scroll;
+}
+
+.listGenre label {
+    position: relative;
+    cursor: pointer;
+    width: 10%;
+    font-size: .7rem;
+}
+
+.boxGenre {
+    width: 100%;
+    height: 30px;
+    color: #fff;
+}
+
+.listGenre label input[type="checkbox"] {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.listGenre label input[type="checkbox"]:checked~.boxGenre {
+    background-color: #fff !important;
+    color: #00CC21;
+}
+
+.sortGroup{
+    font-size: .7rem !important;
+}
+
+#selectYear, .sortSelect{
+    max-height: 200px;
+    overflow-y: scroll;
+    min-width: 2rem;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link{
+    /* color: #fff !important;
+    background-color: #00CC21; */
+    border: none;
+}
+
+.page-item{
+    cursor: pointer;
+}
+
+.page-link{
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    color: #00CC21
+}
+
+.page-link:hover{
+    color: #39ff14;
+}
+
+.page-link:focus{
+    color: #00CC21;
+    box-shadow: unset
+}
+
+.page-item:first-child .page-link{
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.page-item:last-child .page-link    {
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.yearSelect{
+    cursor: pointer;
+}
+
+.yearSelect:active{
+    background-color: #00CC21;
+    color: #fff;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.card-img-top{
+    height: 292px !important;
+}

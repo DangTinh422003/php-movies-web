@@ -1,0 +1,297 @@
+body {
+  background-color: #141414;
+  font-family: Arial, sans-serif;
+  /* padding-top: px; */
+  /* color: #fff; */
+}
+
+.fastInf {
+  background-image: url("/assets/img/The_Last_Us.jpg");
+}
+
+.backdrop {
+  height: 50vh;
+}
+
+main {
+  min-height: 100vh;
+  padding: 7% 0;
+}
+
+
+p {
+  margin: unset;
+}
+
+a {
+  color: #f3f7f2;
+  text-decoration: none;
+}
+
+.card {
+  background-color: #383636;
+  border-radius: 2%;
+}
+
+.card-header {
+  border: none;
+  background-color: unset;
+}
+
+.card-body input {
+  width: 100%;
+  height: 3rem;
+  background-color: #ffffff00;
+  color: #00CC21;
+  border: none;
+  padding-left: 20px;
+}
+
+.card-body.active input{
+  background-color: #ffffff;
+  color: #000;
+}
+
+.color-card {
+  background-color: #383636;
+  padding-bottom: 15%;
+}
+
+.color-card :hover {
+  color: #00CC21;
+}
+
+.avatar-profile{
+  margin-right: 50px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}
+
+.name{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.username{
+  color: #fff;
+}
+
+.inforRight{
+  width: 50%;
+}
+
+.color-button {
+  background-color: #00CC21;
+  padding: 15px 0;
+  color: #fff;
+}
+
+.color-button[type="submit"], .btn-ch-pass, .btn-change-pass{
+  opacity: 0.9;
+  border: unset;
+  background-color: #00CC21;
+  padding: 15px 20px;
+  width: 35%;
+  font-size: 1rem;
+}
+
+.color-button[type="submit"]:hover, .btn-ch-pass:hover, .btn-change-pass:hover{
+  opacity: 1;
+}
+
+.btn-change-pass:hover{
+  background-color: #00CC21 !important;
+}
+
+.col-form-label p{
+  width: 100%;
+  font-size: 0.7rem !important;
+}
+
+.spinner-border{
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Style the tab */
+.tab {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #383636;
+  border-radius: 7%;
+}
+
+/* Style the buttons inside the tab */
+.tab a {
+  padding: 10px;
+  border: 2px solid #00000000;
+}
+
+/* Change background color of buttons on hover */
+.tab a:hover {
+  color: #fff;
+  border: 2px solid #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab a.active {
+  background-color: #fff;
+  color: #00CC21;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 5% 10%;
+  height: 100%;
+  border-radius: 6%;
+}
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+  width: 60%;
+  margin-top: 5%;
+}
+
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+  width: 60%;
+  margin-top: 5%;
+}
+
+.hide-md-lg {
+  display: block;
+  text-align: center;
+}
+
+.col {
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Style for language select menu */
+#language-select {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+/* Style for content in different languages */
+body[lang="en"] h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+body[lang="fr"] h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+body[lang="es"] h1 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+/* Style for currency converter form */
+#currency-converter-form {
+  background-color: #8e8d8dda;
+  border: 1px solid #00CC21;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+/* Style for input form */
+.input-group {
+  margin-bottom: 1rem;
+}
+
+/* Style for convert button */
+#convert-btn {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  background-color: #00CC21;
+}
+
+/* Style for result container */
+#result-container {
+  background-color: #8e8d8dda;
+  border: 1px solid #00CC21;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 48%;
+}
+
+.form-group label{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form-check {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  margin-top: 20px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.color_text {
+  color: #00CC21;
+}
+
+.forgot {
+  color: #00CC21;
+}
+
+.forgot :hover {
+  color: #fff;
+}
+
+.color_but_bg {
+  background-color: #00CC21;
+}

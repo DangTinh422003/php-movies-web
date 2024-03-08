@@ -1,0 +1,225 @@
+.slide-in-top {
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-out-top {
+    -webkit-animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.slide-in-top-drop-down{
+    -webkit-animation: slide-in-top-drop-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top-drop-down 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link.active::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 15%;
+    background-color: #00CC21
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: 1s;
+    background-color: #fff;
+    border-radius: 38px;
+    width: 45px;
+    overflow: hidden;
+    padding: 0 14px;
+    margin-right: 10px;
+}
+
+.search-result{
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 400px;
+    max-height: 400px;
+    overflow: scroll
+}
+
+.result-item{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.result-item p{
+    margin: unset;
+}
+
+.result-item:hover{
+    background-color: #e7e7e7 !important;
+}
+
+.searchIcon{
+    font-size: 17px;
+    color: #00CC21;
+}
+
+.search input{
+    cursor: pointer;
+    opacity: 0;
+    background-color: transparent;
+    border: none;
+    outline-width: 0;
+    outline: none;
+    width: 350px;
+    height: 100%;
+    padding: 0 20px;
+    transform: translate(-50px);
+}
+
+.search:focus-within{
+    width: 400px;
+}
+
+.search:focus-within~.search-result{
+    display: block;
+}
+
+.search:focus-within input{
+    cursor:text;
+    opacity: 1;
+    transform: translate(0);
+}
+
+.search input ~ a{
+    opacity: 0;
+    transform: translate(50px);
+    transition: .5s;
+    color: #00CC21;
+}
+
+.search input:valid ~ a{
+    opacity: 1;
+    transform: translate(0);
+}
+
+.loginBtn{
+    color: #fff !important;
+    background-color: #00CC21 !important;
+}
+
+.loginBtn:hover{
+    background-color: #fff !important;
+    color:#00CC21 !important;
+}
+
+.containerAvatar{
+    position: relative;
+    margin-right: 10px;
+}
+
+.avatar{
+    border-radius: 100%;
+    border: 3px solid #00CC21
+}
+
+.containerAvatar.nav-link{
+    padding: 5px  
+    /* box-sizing: content-box; */
+}
+  
+
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-out-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-out-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slide-in-top-drop-down {
+    0% {
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top-drop-down {
+    0% {
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
